@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import InputForm from './Components/InputForm';
 
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route path="/Author">
           <Author />
+        </Route>
+        <Route path="/BookAdd" >
+          <InputForm onAddBook={onAddBook} />
         </Route>
         <Route path="/BookDetails">
           <BookDetails />

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useHistory } from "react-router-dom"
 
 
 function InputForm ({onAddBook}) {
@@ -7,6 +8,8 @@ function InputForm ({onAddBook}) {
         year: "",
         img: "",
     })
+
+    const history = useHistory()
 
     function handleChange(event){
         setFormData({
@@ -30,7 +33,8 @@ function InputForm ({onAddBook}) {
              body: JSON.stringify(newBook),
             })
              .then((r) => r.json())
-             .then(onAddBook);
+             .then(onAddBook)
+             .then(history.push(`/`))
     }
     
 
