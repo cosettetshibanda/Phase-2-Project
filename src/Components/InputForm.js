@@ -7,6 +7,7 @@ function InputForm ({onAddBook}) {
         title: "",
         year: "",
         img: "",
+        summary: "",
     })
 
     const history = useHistory()
@@ -68,6 +69,16 @@ function InputForm ({onAddBook}) {
                     placeholder="Enter Book's image URL..."
                     className="input-text"
                     />
+                <br />
+                <input 
+                    type="text"
+                    name="summary"
+                    onChange={handleChange}
+                    value={formData.summary}
+                    placeholder="Enter Book's summary..."
+                    className="input-text"
+                    />
+                    <br />
                 <input 
                 type="submit"
                 name="submit"
