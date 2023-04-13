@@ -1,11 +1,12 @@
-import BooksEnvelope from "./BooksEnvelope"
+import BooksContainer from "./BooksContainer"
 import Search from "./Search"
 
-function Home (){
+function Home ({books}){
+
     return (
         <div>
             <Search />
-            <BooksEnvelope />
+            <BooksContainer books={books} />
         </div>
     )
 }
