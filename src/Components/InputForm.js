@@ -1,20 +1,47 @@
 import { useState } from "react"
 
 
-function InputForm () {
+function InputForm ({onAddBook}) {
     const [formData, setFormData] = useState({
         title: "",
         year: "",
         img: "",
     })
 
-    return(
+    function handleChange(event){
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value,
+        })
+    }
+
+    function handleSubmit(e){
+        e.preventDefault()
+
+        const newBook = {
+            ...formData
+        }
+
+        fetch("http://localhost:3000/books", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+             },
+             body: JSON.stringify(newBook),
+            })
+             .then((r) => r.json())
+             .then(onAddBook);
+    }
+    
+
+    return (
         <div className="container">
-            <form className="addBookForm">
+            <form onSubmit={handleSubmit} className="addBookForm">
                 <h3>Add a Book!</h3>
                 <input
                     type="text"
                     name="title"
+                    onChange={handleChange}
                     value={formData.title}
                     placeholder="Enter Book's Title..."
                     className="input-text"
@@ -23,6 +50,7 @@ function InputForm () {
                 <input
                     type="text"
                     name="year"
+                    onChange={handleChange}
                     value={formData.year}
                     placeholder="Enter Book's Year..."
                     className="input-text"
@@ -31,6 +59,7 @@ function InputForm () {
                 <input 
                     type="text"
                     name="img"
+                    onChange={handleChange}
                     value={formData.img}
                     placeholder="Enter Book's image URL..."
                     className="input-text"
@@ -43,7 +72,8 @@ function InputForm () {
                 />
             </form>
         </div>
-    )
-}
+     )
+    }
+
 
 export default InputForm

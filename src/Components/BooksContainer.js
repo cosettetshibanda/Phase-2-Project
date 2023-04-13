@@ -1,5 +1,4 @@
 import Books from "./Books"
-import InputForm from "./InputForm"
 
 function BooksContainer ({books}) {
     return(
@@ -12,7 +11,6 @@ function BooksContainer ({books}) {
                     />
                 ))}
             </ul>
-            <InputForm />
         </main>
     )
 }
