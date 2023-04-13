@@ -2,13 +2,13 @@ import BooksContainer from "./BooksContainer"
 import InputForm from "./InputForm"
 import Search from "./Search"
 
-function Home ({books, onAddBook, onDeleteBook}){
+function Home ({books, onAddBook, onDeleteBook, search, setSearch, booksToDisplay}){
 
     return (
         <div>
-            <Search />
+            <Search search={search} setSearch={setSearch}  />
             <InputForm onAddBook={onAddBook}/>
-            <BooksContainer books={books} onDeleteBook={onDeleteBook} />
+            <BooksContainer books={booksToDisplay} onDeleteBook={onDeleteBook} />
         </div>
     )
 }

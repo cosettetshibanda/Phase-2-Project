@@ -8,12 +8,17 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [books, setBooks] = useState([])
+  const [search, setSearch] = useState("")
 
   useEffect(() => {
     fetch("http://localhost:3000/books")
       .then(res => res.json())
       .then(setBooks)
   }, [])
+
+  const booksToDisplay = books.filter((book) =>
+  book.title.toLowerCase().includes(search.toLowerCase())
+);
 
   function onAddBook(newBook) {
     setBooks([newBook, ...books])
@@ -27,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} />
+      <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
       <Author />
       <BookDetails />
       <Navbar />
