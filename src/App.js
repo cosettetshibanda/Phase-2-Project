@@ -4,6 +4,7 @@ import BookDetails from './Components/BookDetails';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 
 function App() {
@@ -32,10 +33,18 @@ function App() {
 
   return (
     <div className="App">
-      <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
-      <Author />
-      <BookDetails />
       <Navbar />
+      <Switch>
+        <Route exact path="/">
+          <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
+        </Route>
+        <Route path="/Author">
+          <Author />
+        </Route>
+        <Route path="/BookDetails">
+          <BookDetails />
+        </Route>
+      </Switch>
     </div>
   );
 }
