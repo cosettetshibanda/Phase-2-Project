@@ -2,7 +2,7 @@ import BooksContainer from "./BooksContainer"
 import InputForm from "./InputForm"
 import Search from "./Search"
 
-function Home ({books, onAddBook, onDeleteBook, search, setSearch, booksToDisplay}){
+function Home ({ onAddBook, onDeleteBook, search, setSearch, booksToDisplay }){
 
     return (
         <div>
