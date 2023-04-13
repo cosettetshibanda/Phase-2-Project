@@ -19,10 +19,15 @@ function App() {
     setBooks([newBook, ...books])
   }
 
+  function handleDeleteBook(bookToDelete){
+    const updatedBooks = books.filter((book) => book.id !== bookToDelete.id) 
+    setBooks(updatedBooks)
+  }
+
 
   return (
     <div className="App">
-      <Home books={books} onAddBook={onAddBook} />
+      <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} />
       <Author />
       <BookDetails />
       <Navbar />

@@ -1,6 +1,6 @@
 import Books from "./Books"
 
-function BooksContainer ({books}) {
+function BooksContainer ({books, onDeleteBook}) {
     return(
         <main>
             <ul className="books">
@@ -8,6 +8,7 @@ function BooksContainer ({books}) {
                     <Books 
                     key={book.id}
                     book={book}
+                    onDeleteBook={onDeleteBook}
                     />
                 ))}
             </ul>

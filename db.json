@@ -175,28 +175,16 @@
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtrggyyDJWRoazqXF11CWgdFcMj_NKUzLw3EMw1pCmtqzh5i984_SD6Fc&s=10"
     },
     {
-      "id": 30,
-      "title": "Calamity",
-      "year": "2016",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBPn3kIcp9V-GrhZi0PFUiYGeMwfEmIhr27YBVgHtMz_RFrao7RzXrbhM9&s=10"
-    },
-    {
-      "title": "Perfect State",
-      "year": "2015",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDa1oxDA0bF8IAoH5pDIhdtrUrZlSjNeHAu89nF5eg8ZdVgrvLmLgohR4A&s=10",
-      "id": 31
-    },
-    {
-      "title": "Perfect State",
-      "year": "2015",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDa1oxDA0bF8IAoH5pDIhdtrUrZlSjNeHAu89nF5eg8ZdVgrvLmLgohR4A&s=10",
-      "id": 32
-    },
-    {
       "title": "Sixth of the Dusk",
       "year": "2014",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-KhfQJ0_uPULBMFwl5o7iu_o4Sm4tgyoXO3mCgm55NCC77GiTqa_Ehs6&s=10",
       "id": 33
+    },
+    {
+      "title": "Calamity",
+      "year": "2016",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBPn3kIcp9V-GrhZi0PFUiYGeMwfEmIhr27YBVgHtMz_RFrao7RzXrbhM9&s=10",
+      "id": 34
     }
   ]
 }

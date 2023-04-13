@@ -1,4 +1,15 @@
-function Books ({book}) {
+function Books ({book, onDeleteBook}) {
+
+    function handleDeleteClick() {
+        fetch(`http://localhost:3000/books/${book.id}`, {
+          method: "DELETE",
+        })
+          .then((r) => r.json())
+          .then(() => {
+            onDeleteBook(book);
+          });
+      }
+
   return (
     <li className="book" >
         <div className="img">
@@ -10,6 +21,9 @@ function Books ({book}) {
         <div className="year">
             <h3>{book.year}</h3>
         </div>
+        <button className="del-btn" onClick={handleDeleteClick}>
+        🗑
+      </button>
     </li>
   )
 }
