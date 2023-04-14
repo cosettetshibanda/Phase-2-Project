@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Books ({book, onDeleteBook}) {
 
     function handleDeleteClick() {
@@ -21,6 +23,10 @@ function Books ({book, onDeleteBook}) {
         <div className="year">
             <h3>{book.year}</h3>
         </div>
+        <nav>
+            <Link to={`${book.id}`}>Book Details</Link>
+        </nav>
+      <br />
         <button className="del-btn" onClick={handleDeleteClick}>
         🗑
       </button>

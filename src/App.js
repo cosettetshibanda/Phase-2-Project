@@ -1,11 +1,11 @@
 import './App.css';
 import Author from './Components/Author';
-import BookDetails from './Components/BookDetails';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import InputForm from './Components/InputForm';
+import BookDetails from './Components/BookDetails';
 
 
 function App() {
@@ -38,15 +38,15 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
+          <Route path="{books.map((book) => book.id)}">
+            <BookDetails />
+          </Route>
         </Route>
         <Route path="/Author">
           <Author />
         </Route>
         <Route path="/BookAdd" >
           <InputForm onAddBook={onAddBook} />
-        </Route>
-        <Route path="/BookDetails">
-          <BookDetails />
         </Route>
       </Switch>
     </div>
