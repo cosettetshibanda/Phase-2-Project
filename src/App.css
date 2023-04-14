@@ -7,11 +7,20 @@ div.header {
   padding : 30;
   
 }
+button.del-btn {
+  background-color: black;
+  border-radius: 50px;
+}
 
-h3 {
+button.del-btn:hover {
+  background-color: rgb(223, 181, 30);
+}
+
+h3.addbook {
   color:rgb(255, 0, 153);
   font-size: larger;
 }
+
 input.submit {
   width: 100px;
   background: #de0993;
@@ -26,7 +35,7 @@ input.submit {
   font-size: 14px;
 }
  div.container {
-  padding: 50px 150px;
+  padding: 50px 100px 200px;
   background-image: url(https://us.123rf.com/450wm/tomertu/tomertu2203/tomertu220300689/184025429-image-of-open-antique-book-on-wooden-table-with-vintage-key.jpg?ver=6;);
 }
 input.input-text{
@@ -52,8 +61,11 @@ a:hover {
 a.details{
   color: brown;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
 }
-
+a.details:hover {
+  color:black
+}
 div.summary {
   color:black;
   text-decoration: none;
@@ -69,21 +81,13 @@ div.search {
   color:black;
 }
 
-input.prompt {
-  font-weight: bold;
-  color:blueviolet
-}
 
 ul.books{
   display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     column-gap: 10rem;
-    row-gap: .25rem;
-    margin-top: 1rem;
-}
-
-form.addBookForm {
-
+    row-gap: 1rem;
+    margin-top: 2rem;
 }
 
 div.title {
@@ -93,6 +97,10 @@ div.title {
 div.year {
   color:palevioletred;
   font-family: fantasy;
+}
+
+img.img {
+  width: 125px;
 }
 
 div.home {
