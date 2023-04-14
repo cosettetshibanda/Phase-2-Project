@@ -1,7 +1,7 @@
 import './App.css';
 import Author from './Components/Author';
 import Navbar from './Components/Navbar';
-import Home from './Components/Home';
+import BookPage from './Components/BookPage';
 import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import InputForm from './Components/InputForm';
@@ -42,7 +42,7 @@ function App() {
           <Author />
         </Route>
         <Route path="/Books">
-          <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
+          <BookPage books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
         </Route>
         <Route path="/BookAdd" >
           <InputForm onAddBook={onAddBook} className="inputform" />
