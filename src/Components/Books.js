@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
+import BookDetails from "./BookDetails";
 
 function Books ({book, onDeleteBook}) {
 
@@ -24,7 +25,11 @@ function Books ({book, onDeleteBook}) {
             <h3>{book.year}</h3>
         </div>
         <nav>
-            <Link to={`${book.id}`}>Book Details</Link>
+            <Link to={`/Books/${book.id}`}> Book Details
+            <Route path={`/Books/${book.id}`}>
+                <BookDetails book={book}/>
+            </Route>
+            </Link>
         </nav>
       <br />
         <button className="del-btn" onClick={handleDeleteClick}>

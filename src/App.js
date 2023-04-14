@@ -32,18 +32,17 @@ function App() {
   }
 
 
+
+
   return (
     <div className="App">
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
-          <Route path="{books.map((book) => book.id)}">
-            <BookDetails />
-          </Route>
-        </Route>
-        <Route path="/Author">
           <Author />
+        </Route>
+        <Route path="/Books">
+          <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
         </Route>
         <Route path="/BookAdd" >
           <InputForm onAddBook={onAddBook} />

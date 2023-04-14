@@ -1,10 +1,10 @@
 
 
-function BookDetails ({books}) {
+function BookDetails ({book}) {
 
     return (
         <div>
-            <h1>book details</h1>
+            <p>{book.summary}</p>
         </div>
     )
 }
