@@ -24,8 +24,8 @@ function Books ({book, onDeleteBook}) {
         <div className="year">
             <h3>{book.year}</h3>
         </div>
-        <nav>
-            <Link to={`/Books/${book.id}`}> Book Details
+        <nav >
+            <Link to={`/Books/${book.id}`} className="details"> Book Details
             <Route path={`/Books/${book.id}`}>
                 <BookDetails book={book}/>
             </Route>

@@ -3,7 +3,7 @@
 function BookDetails ({book}) {
 
     return (
-        <div>
+        <div className="summary">
             <p>{book.summary}</p>
         </div>
     )

@@ -35,7 +35,7 @@ function InputForm ({onAddBook}) {
             })
              .then((r) => r.json())
              .then(onAddBook)
-             .then(history.push(`/`))
+             .then(history.push(`/Books`))
     }
     
 

@@ -2,7 +2,69 @@
   text-align: center;
 }
 
-.App-logo {
+div.header {
+  font-size: larger;
+  padding : 30;
+  
+}
+a.active {
+  color: red;
+}
+
+a:hover {
+  color: pink;
+}
+
+a.details{
+  color: brown;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.summary {
+  color:black;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+div.input {
+    
+}
+
+div.header {
+ 
+}
+
+div.search {
+  color:black;
+}
+
+input.prompt {
+  font-weight: bold;
+  color:blueviolet
+}
+
+ul.books{
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    column-gap: 10rem;
+    row-gap: .25rem;
+    margin-top: 1rem;
+}
+
+form.addBookForm {
+
+}
+
+div.title {
+  color: maroon; 
+  font-style: italic;
+}
+div.year {
+  color:palevioletred;
+  font-family: fantasy;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +97,6 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+ 
