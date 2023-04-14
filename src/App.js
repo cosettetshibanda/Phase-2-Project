@@ -45,7 +45,7 @@ function App() {
           <Home books={books} onAddBook={onAddBook} onDeleteBook={handleDeleteBook} search={search} setSearch={setSearch} booksToDisplay={booksToDisplay} />
         </Route>
         <Route path="/BookAdd" >
-          <InputForm onAddBook={onAddBook} />
+          <InputForm onAddBook={onAddBook} className="inputform" />
         </Route>
       </Switch>
     </div>

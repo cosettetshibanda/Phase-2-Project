@@ -7,6 +7,40 @@ div.header {
   padding : 30;
   
 }
+
+h3 {
+  color:rgb(255, 0, 153);
+  font-size: larger;
+}
+input.submit {
+  width: 100px;
+  background: #de0993;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+ div.container {
+  padding: 50px 150px;
+  background-image: url(https://us.123rf.com/450wm/tomertu/tomertu2203/tomertu220300689/184025429-image-of-open-antique-book-on-wooden-table-with-vintage-key.jpg?ver=6;);
+}
+input.input-text{
+  padding: 15px;
+  border: 1px solid #e112d0;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #38050f;
+  font-size: 13px;
+}
+
 a.active {
   color: red;
 }
@@ -31,7 +65,7 @@ div.input {
 }
 
 div.header {
- 
+ background-color: rgb(152, 201, 217);
 }
 
 div.search {
@@ -62,6 +96,11 @@ div.title {
 div.year {
   color:palevioletred;
   font-family: fantasy;
+}
+
+div.home {
+  background-image: linear-gradient(aqua, rgb(70, 0, 128)) ;
+  padding: 50px;
 }
 
 /* .App-logo {
