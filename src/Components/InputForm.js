@@ -42,7 +42,7 @@ function InputForm ({onAddBook}) {
     return (
         <div className="container">
             <form onSubmit={handleSubmit} className="addBookForm">
-                <h3>Add a Book!</h3>
+                <h3 className="addbook">Add a Book!</h3>
                 <input
                     type="text"
                     name="title"

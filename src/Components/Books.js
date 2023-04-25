@@ -15,8 +15,11 @@ function Books ({book, onDeleteBook}) {
 
   return (
     <li className="book" >
-        <div className="img">
-            <img src={book.img} alt={book.title} />
+        <div>
+            <img src={book.img} alt={book.title} className="img"/>
+        <button className="del-btn" onClick={handleDeleteClick}>
+        🗑
+      </button>
         </div>
         <div className="title">
             <h2>{book.title}</h2>
@@ -31,10 +34,6 @@ function Books ({book, onDeleteBook}) {
             </Route>
             </Link>
         </nav>
-      <br />
-        <button className="del-btn" onClick={handleDeleteClick}>
-        🗑
-      </button>
     </li>
   )
 }
