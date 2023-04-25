@@ -1,11 +1,11 @@
-import './App.css';
-import Author from './Components/Author';
-import Navbar from './Components/Navbar';
-import BookPage from './Components/BookPage';
+import '../App.css';
+import Author from './Author';
+import Navbar from './Navbar';
+import BookPage from './BookPage';
 import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import InputForm from './Components/InputForm';
-import BookDetails from './Components/BookDetails';
+import InputForm from './InputForm';
+import BookDetails from './BookDetails';
 
 
 function App() {

@@ -6,6 +6,16 @@
 
 ## Details
 
+├── public
+└── src
+     ├── Components
+        ├── 
+└── App.css
+├── App.js
+├── db.json
+├── README.md
+
+
 
 ## Features
 
