@@ -5,8 +5,6 @@ import BookPage from './BookPage';
 import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import InputForm from './InputForm';
-import BookDetails from './BookDetails';
-
 
 function App() {
   const [books, setBooks] = useState([])

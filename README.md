@@ -43,4 +43,4 @@ My favorite past time is to read so my first thoughts were to do it on a ton of 
 
 
 ## Blog
-
+https://medium.com/@cosettetshibanda/client-side-routing-route-switch-and-navlink-components-f1fdfe88ebce
