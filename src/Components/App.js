@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import InputForm from './InputForm';
 
+
 function App() {
   const [books, setBooks] = useState([])
   const [search, setSearch] = useState("")
@@ -28,8 +29,6 @@ function App() {
     const updatedBooks = books.filter((book) => book.id !== bookToDelete.id) 
     setBooks(updatedBooks)
   }
-
-
 
 
   return (
